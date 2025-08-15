@@ -3,6 +3,10 @@
 name: CI
 run-name: "Task - ${{ inputs.superplane_execution_id }}"
 
+
+permissions:
+  id-token: write
+
 # Controls when the workflow will run
 on:
   workflow_dispatch:
